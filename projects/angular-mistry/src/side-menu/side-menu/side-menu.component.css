@@ -1,0 +1,45 @@
+.ngm-side-menu-holder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    z-index: 10000;
+}
+
+.ngm-blur-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: #00000080;
+    filter: blur(2px);
+}
+
+.ngm-side-menu {
+    position: relative;
+    width: 25%;
+    height: 100%;
+    background-color: aliceblue;
+}
+
+.ngm-side-menu>.ngm-close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px 20px 0 0;
+}
+
+.ngm-side-menu>.ngm-menu-body>.ngm-menu-list>ul{
+    margin: 0;
+    padding: 2.5rem 0 2.5rem 0;
+    list-style-type: none;
+}
+
+.ngm-side-menu>.ngm-menu-body>.ngm-menu-list>ul>li{
+    padding: 2.5rem 2.5rem 1.5rem 2.5rem;
+    text-align: center;
+}

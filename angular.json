@@ -93,6 +93,42 @@
           }
         }
       }
+    },
+    "angular-mistry": {
+      "projectType": "library",
+      "root": "projects/angular-mistry",
+      "sourceRoot": "projects/angular-mistry/src",
+      "prefix": "ngm",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/angular-mistry/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/angular-mistry/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/angular-mistry/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/angular-mistry/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
     }
+  },
+  "cli": {
+    "analytics": "fa18df47-cc0b-4fcb-8aee-f84b52fe925f"
   }
 }

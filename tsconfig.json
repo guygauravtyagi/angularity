@@ -2,6 +2,17 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "angular-mistry": [
+        "dist/angular-mistry"
+      ],
+      "my-lib": [
+        "node_modules/angular-mistry"
+      ],
+      "my-lib/*": [
+        "node_modules/angular-mistry/*"
+      ]
+    },
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
